@@ -1,4 +1,5 @@
 1. Anton Serovski
+   ![it's a meme](https://upload.wikimedia.org/wikipedia/ru/5/5f/Original_Doge_meme.jpg "WOW")
 
 2. santon23@gmail.com
 
@@ -14,4 +15,4 @@
 
 7. Graduated from the Pavel Sukhoi State Technical University with a degree in power engineering.
 
-8. According tests my english is on level Intermediate.
+8. According tests my english is on Intermediate level.
