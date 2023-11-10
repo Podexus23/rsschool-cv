@@ -72,28 +72,26 @@
           Largest Rectangle in Histogram
         </p>
         <code>
-          <pre>
-          function largestRectangleArea(heights) { 
-            let nextSmaller = new Array(heights.length).fill(heights.length);
-            let previousSmaller = new Array(heights.length).fill(-1);
-            let stack = [];
-            for (let i = 0; i < heights.length; i++) {
-              while (stack.length && heights[stack.at(-1)] > heights[i]) {
-                let stackTop = stack.pop();
-                nextSmaller[stackTop] = i;
-              }
-              if (stack.length) previousSmaller[i] = stack.at(-1);
-              stack.push(i); 
-            } 
-            let maxArea = 0;
-            for (let i = 0; i < heights.length; i++) {
-              let currentHeight = heights[i]; 
-              let width = nextSmaller[i] - previousSmaller[i] - 1; 
-              maxArea = Math.max(maxArea, currentHeight * width);
-            }
-            return maxArea;
-          }
-          </pre>
+          function largestRectangleArea(heights) { <br>
+            let nextSmaller = new Array(heights.length).fill(heights.length);<br>
+            let previousSmaller = new Array(heights.length).fill(-1);<br>
+            let stack = [];<br>
+            for (let i = 0; i &lt; heights.length; i++) {<br>
+              while (stack.length &amp;&amp; heights[stack.at(-1)] &gt; heights[i]) {<br>
+                let stackTop = stack.pop();<br>
+                nextSmaller[stackTop] = i;<br>
+              }<br>
+              if (stack.length) previousSmaller[i] = stack.at(-1);<br>
+              stack.push(i); <br>
+            } <br>
+            let maxArea = 0;<br>
+            for (let i = 0; i &lt; heights.length; i++) {<br>
+              let currentHeight = heights[i]; <br>
+              let width = nextSmaller[i] - previousSmaller[i] - 1; <br>
+              maxArea = Math.max(maxArea, currentHeight * width);<br>
+            }<br>
+            return maxArea;<br>
+          }<br>
         </code>
       </section>
       <section class="works">
