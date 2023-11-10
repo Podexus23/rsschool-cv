@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My CV</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header-title title">Anton Serovski</h1>
+      <div class="header-contacts">
+        <h3 class="header-contacts__title title">Contacts</h3>
+        <ul class="contacts-list">
+          <li>Phone: <a href="#">+375 29 386 73 80</a></li>
+          <li>E-mail: <a href="#">santon23@gmail.com</a></li>
+          <li>Telegram: <a href="#">@usaty_podex</a></li>
+          <li>GitHub: <a href="https://github.com/Podexus23">Podexus23</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <section class="about">
+        <h3 class="about-title title">About Myself</h3>
+        <div class="about-description">
+          <p>Born with an insatiable curiosity and a desire to make a difference,
+            I embarked on a journey of self-discovery and exploration from an
+            early age. Through diligence and determination, I developed a
+            passion for various mechanisms and the principles behind their
+            functioning, which eventually led me to pursue higher education in
+            the field of energy engineering.</p>
+          <p>What truly sets me apart is my ability to adapt to new challenges
+            and draw lessons from every experience. I have a keen eye for
+            detail, a collaborative spirit, and an innovative mindset, making me
+            a valuable asset in any team.</p>
+          <p>Beyond the professional realm, I am passionate about fiction and
+            comedy literature, music spanning different genres and generations,
+            movies, and computer games.</p>
+          <p>As time progresses, I continue to seek new opportunities for growth
+            and remain deeply passionate about technology, people, and the arts.
+            My story is one of relentless pursuit of excellence and the belief
+            that every challenge is an opportunity to learn and thrive.</p>
+        </div>
+      </section>
+      <section class="skills">
+        <h3 class="skills-title title">Skills</h3>
+        <ul class="skills-list">
+          <li>HTML</li>
+          <li>CSS (SASS, BEM methodology)</li>
+          <li>JavaScript (Fundamentals, OOP, FP, ES6+, DOM), TS</li>
+          <li>Git, GitHub</li>
+          <li>Module bundlers: WebPack, Parcel</li>
+          <li>Node JS (Express)</li>
+          <li>MongoDB (Mongoose)</li>
+          <li>Figma (for Web Dev)</li>
+          <li>VSCode</li>
+          <li>AWS Cloud Quest: Cloud Practitioner</li>
+        </ul>
+      </section>
+      <section class="code">
+        <h3 class="code-title title">Code Examples</h3>
+        <p class="code-description">interesting task from leetcode<br>
+          Largest Rectangle in Histogram</p>
+        <code>function largestRectangleArea(heights) {<br>
+            let nextSmaller = new Array(heights.length).fill(heights.length);<br>
+            let previousSmaller = new Array(heights.length).fill(-1);<br>
+            let stack = [];<br>
+            for (let i = 0; i &lt; heights.length; i++) {<br>
+              while (stack.length &amp;&amp; heights[stack.at(-1)] &gt; heights[i]) {<br>
+                let stackTop = stack.pop();<br>
+                nextSmaller[stackTop] = i;<br>
+              }<br>
+              if (stack.length) previousSmaller[i] = stack.at(-1);<br>
+              stack.push(i); <br>
+            } <br>
+            let maxArea = 0;<br>
+            for (let i = 0; i &lt; heights.length; i++) {<br>
+              let currentHeight = heights[i];<br>
+              let width = nextSmaller[i] - previousSmaller[i] - 1;<br>
+              maxArea = Math.max(maxArea, currentHeight * width);<br>
+            }<br>
+            return maxArea;<br>
+          }<br></code>
+      </section>
+      <section class="works">
+        <h3 class="works-title title">Work experience and examples</h3>
+        <p class="works-description">I working as System Administrator(network administrator and computer
+          operator) at HC Gomel for almoust 2 years</p>
+        <ul class="works-examples">
+          <li>Here i worked with LeafLet and tried to use forms<a href="https://podexus23.github.io/10-Mapty">Mapty</a></li>
+          <li>Probably first work with API and kinda useful if you wanna make something to eat 😀 <a href="https://forkify11-23.netlify.app/#5ed6604591c37cdc054bcd09">Forkify</a></li>
+        </ul>
+      </section>
+      <section class="education">
+        <h3 class="edutcation-title title">Education</h3>
+        <ul class="education-description">
+          <li>Gratuated at Sukhoi State Technical University of Gomel as Power Engeneer</li>
+          <li>Studied JavaScript, Node JS on Udemy courses</li>
+        </ul>
+      </section>
+      <section class="english">
+        <h3 class="english-title title">English</h3>
+        <p class="english-description"><a href="https://test.str.by/login/index.php">StreamLine Language School</a> English test result: A2</p>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+  </body>
+</html>
