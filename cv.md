@@ -31,3 +31,51 @@ As time progresses, I continue to seek new opportunities for growth and remain d
 - Figma (for Web Dev)
 - VSCode
 - AWS Cloud Quest: Cloud Practitioner
+
+## Code Examples
+
+interesting task from leetcode
+Largest Rectangle in Histogram
+
+```
+function largestRectangleArea(heights) {
+  let nextSmaller = new Array(heights.length).fill(heights.length);
+  let previousSmaller = new Array(heights.length).fill(-1);
+  let stack = [];
+  for (let i = 0; i < heights.length; i++) {
+    while (stack.length && heights[stack.at(-1)] > heights[i]) {
+      let stackTop = stack.pop();
+      nextSmaller[stackTop] = i;
+    }
+    if (stack.length) {
+      previousSmaller[i] = stack.at(-1);
+    }
+    stack.push(i);
+  }
+
+  let maxArea = 0;
+  for (let i = 0; i < heights.length; i++) {
+    let currentHeight = heights[i];
+    let width = nextSmaller[i] - previousSmaller[i] - 1;
+    maxArea = Math.max(maxArea, currentHeight * width);
+  }
+
+  return maxArea;
+}
+```
+
+## Work experience and examples
+
+I working as System Administrator(network administrator and computer operator) at HC Gomel for almoust 2 years
+
+- Here i worked with LeafLet and tried to use forms [Mapty](https://podexus23.github.io/10-Mapty/)
+- Probably first work with API and kinda useful if you wanna make something to eat 😀 [Forkify](https://forkify11-23.netlify.app/#5ed6604591c37cdc054bcd09)
+
+## Education:
+
+- Gratuated at Sukhoi State Technical University of Gomel as Power Engeneer
+- Studied JavaScript, Node JS on Udemy courses
+
+### English
+
+- [StreamLine Language School English test result:](https://test.str.by/login/index.php) A2
