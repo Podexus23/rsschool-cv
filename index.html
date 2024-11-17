@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    >
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css" >
+    <title>CV task</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="img/my-photo.jpg" alt="my avatar" class="header-avatar" >
+      <div class="header-wrapper">
+        <h1 class="header-name">
+          Anton <br >
+          <strong>Serovski</strong>
+        </h1>
+        <nav class="header-contacts">
+          <h2>My contacts:</h2>
+          <ul>
+            <li>
+              <img
+                class="header-icon"
+                src="img/phone-icon.svg"
+                alt="icon: phone"
+              >
+              <a href="tel:+375293867380">+375293867380</a>
+            </li>
+            <li>
+              <img
+                class="header-icon"
+                src="img/mail-icon.svg"
+                alt="icon: mail"
+              >
+              <a href="mailto:santon23@gmail.com">You can E-mail me</a>
+            </li>
+            <li>
+              <img
+                class="header-icon"
+                src="img/insta-icon.svg"
+                alt="icon: instagramm"
+              >
+              <a href="https://www.instagram.com/usaty_podex/"
+                >or write in Direct</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <article class="general-info">
+        <h3>General info:</h3>
+        <p>
+          I'm interested in IT and that’s the main reason of my study. <br >
+          Very fascinated with technology and computer science since my
+          childhood. <br >
+          So i decided to concentrate my energy and passion at my real interest.
+        </p>
+      </article>
+
+      <article class="skills">
+        <h3>My skills:</h3>
+        <p>I took several courses <br ></p>
+        <ul class="skills-list">
+          <li>
+            <a
+              href="https://ru.code-basics.com/languages/html"
+              class="skills-link"
+              >HTML</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://ru.code-basics.com/languages/css"
+              class="skills-link"
+              >CSS</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://ru.code-basics.com/languages/javascript"
+              class="skills-link"
+              >JS</a
+            >
+          </li>
+        </ul>
+      </article>
+
+      <article class="code-examples">
+        <h3 class="code_heading">Code-examples:</h3>
+        <div class="code_announce">
+          <p>You can check my code at</p>
+          <a href="https://www.codewars.com/users/Podexus23"
+            ><mark>Codewars</mark></a
+          >
+          and
+          <a href="https://github.com/Podexus23"><mark>Github</mark></a>
+        </div>
+        
+        <pre class="code-example"><code>void clean_str_end(char *str)
+{
+  int i = 0;
+  while (str[i] != '\0')
+  {
+    i++;
+  }
+  if (str[i - 1] == '\n')
+    str[i - 1] = '\0';
+}
+  </code></pre>
+      </article>
+
+      <article class="experience">
+        <h3>Work History:</h3>
+        <p class="works-description">I working as System Administrator(network administrator and computer
+          operator) at HC Gomel for almost 2 years</p>
+        <ul class="works-examples">
+          <li>Here i worked with LeafLet and tried to use forms <a href="https://podexus23.github.io/10-Mapty">Mapty</a></li>
+        </ul>
+      </article>
+
+      <article class="education">
+        <h3>Education summary:</h3>
+        <p>
+          Graduated from the Pavel Sukhoi State Technical University with a
+          degree in power systems engineering.
+        </p>
+      </article>
+
+      <article class="language">
+        <h3>Language knowledge:</h3>
+        <p>According tests my english is on level <mark>Intermediate</mark>.</p>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <a href="https://github.com/Podexus23" class="footer_git">GitHub</a>
+      <div class="footer__year">2024</div>
+      <a href="https://rs.school/courses/javascript" class="footer__course-logo"
+        ><img src="./img/rs_school_js.svg" alt="logo"
+      ></a>
+    </footer>
+  </body>
+</html>
